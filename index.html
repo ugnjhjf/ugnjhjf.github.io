@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- CSS input -->
+    <link rel="stylesheet" href="./src/css/card_style.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- JS input -->
+
+    <script src="./src/js/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GNetwork | Home</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"
+        ><span>GNetwork</span><span class="author">by RokidnaG</span></a
+      >
+      <ul>
+        <li>
+          <a href="#"><span class="home">Home</span></a>
+        </li>
+        <li><a href="#">About</a></li>
+        <li>
+          <a href="#"><span class="CV">CV</span></a>
+        </li>
+        <li>
+          <a href="./projects/index.html"
+            ><span class="project">Projects</span></a
+          >
+        </li>
+        <li><a href="#">Services</a></li>
+        <li class="animate__animated animate__wobble">
+          <a href="#"><span class="contact">Contact</span></a>
+        </li>
+      </ul>
+    </header>
+    <section class="banner"></section>
+    <div class="card">
+      <div class="imgBx">
+        <img src="./src/assets/images/Echidna.png" />
+      </div>
+      <div class="content">
+        <div class="details">
+          <h2>
+            Rokidna G<br /><span>Unreal Developer</span><br /><span
+              >Backend Developer</span
+            >
+          </h2>
+          <div class="data">
+            <!-- <h3>The Hong Kong Polytechnic University</h3><Br> -->
+            <!-- <h3>120k<br /><span>Followers</span></h3> -->
+            <!-- <h3>285<br /><span>Put your mouse here!!</span></h3> -->
+            <h3>Click here!! </h3>
+
+          </div>
+          <div class="actionBtn">
+            <button onclick="openGithub()">GitHub Page</button>
+            <button onclick="sendEmail()">Message</button>
+          </div>
+          <button class="actionBtn" id="homebtn" onclick="goBackHome()">
+            <h2>To Home Page</h2>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll down button 1 -->
+    <section id="scroll-down1">
+      <div class="container">
+        <a href="#project">
+          <div class="scroll-down"></div>
+        </a>
+      </div>
+    </section>
+
+    <section id="project" class="banner project">
+        <section id="scroll-down2">
+          <div class="container">
+            <a href="">
+              <div class="scroll-down scroll-down-right"></div>
+            </a>
+          </div>
+        </section>
+    </section>
+
+    <!-- Scroll down button 1 -->
+  
+ 
+    <div class="footer">
+      <div class="wrapper">
+        <a class="icon github" href="https://github.com/ugnjhjf">
+          <div class="tooltip">Github</div>
+          <span><i class="fab fa-github"></i></span>
+        </a>
+        <a class="icon whatsapp" href="https://wa.me/qr/2KM2J3HXAPLEP1">
+          <div class="tooltip">Whatsapp</div>
+          <span><i class="fab fa-whatsapp"></i></span>
+        </a>
+        <a class="icon instagram" href="https://www.instagram.com/rokidna?igsh=bHR4a2s5dmhicTln&utm_source=qr">
+          <div class="tooltip">Instagram</div>
+          <span><i class="fab fa-instagram"></i></span>
+        </a>
+        <a class="icon weixin" href="https://u.wechat.com/EINIdt19g0KhFBMg6ONz7LE">
+          <div class="tooltip">Wechat</div>
+          <span><i class="fab fa-weixin"></i></span>
+        </a>
+        <a class="icon linkedin" href="https://www.linkedin.com/in/david-shum-181595267/">
+          <div class="tooltip">Linkedin</div>
+          <span><i class="fab fa-linkedin"></i></span>
+        </a>
+      </div>
+    </div>
+    <div class="footer footer-rokidna">
+      <ul>
+        <li>Rokidna G | Made with <span class="heart">❤</span></li>
+      </ul>
+    </div>
+  </body>
+</html>
