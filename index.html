@@ -5,6 +5,8 @@
     <!-- CSS input -->
     <link rel="stylesheet" href="./src/css/card_style.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/timeline.css">
+    <link rel="stylesheet" href="./src/css/project.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -13,36 +15,48 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <!-- JS input -->
+    <!-- *CSS input END* -->
 
+
+    <!-- JS input -->
     <script src="./src/js/main.js"></script>
+
+    <!-- *JS input END* -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GNetwork | Home</title>
   </head>
+
+
   <body>
+    <!-- Top navigate bar -->
     <header>
       <a href="#" class="logo"
-        ><span>GNetwork</span><span class="author">by RokidnaG</span></a
-      >
+        ><span>GNetwork</span><span class="author">by RokidnaG</span></a>
       <ul>
         <li>
           <a href="#"><span class="home">Home</span></a>
         </li>
-        <li><a href="#">About</a></li>
+<!-- About -->
         <li>
-          <a href="#"><span class="CV">CV</span></a>
+          <a href="#">About</a>
         </li>
+<!-- CV -->
         <li>
-          <a href="./projects/index.html"
-            ><span class="project">Projects</span></a
-          >
+          <a href="https://cloud.gnetwork.space/" onclick="alert('Click continue as Guest')"><span class="CV">CV</span></a>
         </li>
+<!-- Projects -->
+        <li>
+          <a href="./projects/index.html"><span class="project">Projects</span></a>
+        </li>
+<!-- Services -->
         <li><a href="#">Services</a></li>
-        <li class="animate__animated animate__wobble">
+<!-- Contact -->
+        <li class="animate__animated animate__wobble inf">
           <a href="#"><span class="contact">Contact</span></a>
         </li>
       </ul>
     </header>
+    <!-- *Top navigate bar END-->
     <section class="banner"></section>
     <div class="card">
       <div class="imgBx">
@@ -51,15 +65,12 @@
       <div class="content">
         <div class="details">
           <h2>
-            Rokidna G<br /><span>Unreal Developer</span><br /><span
-              >Backend Developer</span
-            >
+            Rokidna G<br /><span>Unreal Developer</span><br /><span >Backend Developer</span>
           </h2>
           <div class="data">
             <!-- <h3>The Hong Kong Polytechnic University</h3><Br> -->
             <!-- <h3>120k<br /><span>Followers</span></h3> -->
-            <!-- <h3>285<br /><span>Put your mouse here!!</span></h3> -->
-            <h3>Click here!! </h3>
+            <h3 class="animate__animated animate__bounce inf">Click here!! </h3>
 
           </div>
           <div class="actionBtn">
@@ -74,27 +85,259 @@
     </div>
 
     <!-- Scroll down button 1 -->
-    <section id="scroll-down1">
-      <div class="container">
-        <a href="#project">
-          <div class="scroll-down"></div>
-        </a>
-      </div>
-    </section>
-
-    <section id="project" class="banner project">
+<!-- Education Page -->
+<div>
+    <section id="education" class="banner education">
         <section id="scroll-down2">
-          <div class="container">
-            <a href="">
+          <div class="">
+            <div class="education_box">
+              <!-- Education -->
+              <ol>
+                <h1>Education</h1>
+                <div>
+                  <ol>
+                    <!-- 1st  -->
+                    <h2>BSc (HONS) In Computer Science - The Hong Kong Polytechnic University</h2>
+                    <img class="polyu-logo" src="./src/assets/images/school_logo/PolyU_logo.png"></img>
+                    <img class="polyu-logo comp" src="./src/assets/images/school_logo/Polyu_comp50_logo.png" alt="">
+                    <h3>2022.09-2026.04</h3>
+                    <h2>Minor in Design </h2>
+                    <img class="polyu-logo design" src="./src/assets/images/school_logo/polyu_design_logo.png" alt="">
+                    <h3>2024.09-2026.04</h3>
+                </div>
+            
+                <!-- 2nd  -->
+                <div>
+                  <ol>
+                    <h2>Summer Exchange - University Of Cambridge</h2>
+                    <img class="polyu-logo" src="./src/assets/images/school_logo/cambridge_logo.svg"></img>
+                    <h3>2023.07</h3>
+                    <!-- 3rd  -->
+                    <h2>Semester Exchange - TongJi University</h2>
+                    <img class="polyu-logo" src="./src/assets/images/school_logo/TongJi_logo.jpg"></img>
+                    <h3>2024.02-2024.07</h3>
+                  </ol>
+                </div>
+              </ol>
+            
+            </div>
+            <a href="#project">
               <div class="scroll-down scroll-down-right"></div>
             </a>
           </div>
         </section>
     </section>
-
-    <!-- Scroll down button 1 -->
+</div>
   
+     <!--timeline-->
+  
+  <br>
+          <!-- Activities Highlight content  -->
+          <div class="container1">
+            <div class="polyu-red-line"></div>
+            <h1>Activities Highlight</h1>
+            <ol>
+              <ol>
+                <!-- First Title -->
+                <h2>BSc (HONS) In Computer Science - The Hong Kong Polytechnic University</h2>
+                <img class="polyu-logo" src="./src/assets/images/school_logo/PolyU_logo.png"></img>
+                <img class="polyu-logo comp" src="./src/assets/images/school_logo/Polyu_comp50_logo.png" alt="">
+                <h3>2022.09-2026</h3>
+          
+                <!-- Year 1 -->
+                <h3>Activity </h3>
+                <h2>Year 1</h3>
+          
+                <ol class>
+                  <div class="timeline-item item-bg competition">
+                    <span class="line competition"></span>
+                    <h4>Proof-of-Concept 2023-1</h4>
+                    <h5>2023.02.13</h5>
+                    <h5 class="merit">Outstanding Team</h5>
+                  </div>
+                </ol>
+          
+                <ol class>
+                  <div class="timeline-item item-bg competition">
+                    <span class="line competition"></span>
+                    <h4>HKIA The 5th Innovation Day 2023</h4>
+                    <h5>2023.04.18</h5>
+                    <h5 class="finalist">Finalist</h5>
+                  </div>
+                </ol>
+
+                  <ol class>
+                    <div class="timeline-item item-bg">
+                      <span class="line competition"></span>
+                      <h4>Proof-of-Concept 2023-2</h4>
+                      <h5>2023.11.08</h5>
+                      <h5 class="finalist">Finalist</h5>
+                    </div>
+                  </ol>
+          
+                  <ol class>
+                    <div class="timeline-item item-bg">
+                      <span class="line competition "></span>
+                      <h4>1st OSH Innovation & Technology award</h4>
+                        <h5>2023.11.08</h5>
+                        <h5 class="finalist">Finalist</h5>
+                    </div>
+                  </ol>
+          
+                  <ol class>
+                    <div class="timeline-item item-bg">
+                      <span class="line competition  "></span>
+                      <h4>PolyU Micro Fund Scheme Micro Fund 2023-24 Cohort 1</h4>
+                      <h5>2024.05.2</h5>
+                      <h5 class="finalist">Finalist</h5>
+                    </div>
+                  </ol>
+              </ol>
+              <ol>
+                <h2>Year 2 Semester 1</h2>
+
+                <ol class>
+                  <div class="timeline-item item-bg">
+                    <span class="line assignment"></span>
+                    <h4>COMP2411 Database System</h4>
+                    <h5>2024.05.2</h5>
+                    <h5>Gruop Leader & Database designer</h5>
+                    <p>- A Online Shopping System (OSS) with Orcale Databse.</p>
+                    <a href="https://github.com/ugnjhjf/COMP2411_DBGP">link</a>
+                  </div>
+                </ol>
+
+                <ol class>
+                  <div class="timeline-item item-bg">
+                    <span class="line certificate"></span>
+                    <h4>Japanese-Language Proficiency Test JLPT</h4>
+                    <h5>2024.01.22</h5>
+                    <h5 class="silver">N3</h5>
+  
+                  </div>
+                </ol>
+
+                  <ol class>
+                  <div class="timeline-item item-bg">
+                    <span class="line competition"></span>
+                    <h4>Hong Kong Techathon 2024</h4>
+                    <h5>2024.01.28</h5>
+                    <h5 class="silver">Silver Prize + HKSTP ideation</h5>
+                  </div>
+                </ol>
+
+                  <ol class>
+                  <div class="timeline-item item-bg">
+                    <span class="line activity hkstp"></span>
+                    <h4>Hong Kong Technology & Science Pack ideation programme</h4>
+                    <img class="company_logo"src="./src/assets/images/company_logo/hkstp_logo.png" alt="">
+                    <h5>2024.02.14</h5>
+                    <p>- </p>
+                  </div>
+                </ol>
+             
+              </ol>
+            </div>
+          <div class="container1">
+            <div class="tongji-blue-line"></div>
+            <ol>
+              <ol>
+                <!-- First Title -->
+                <h2>BSc In Computer Science & Technology - TongJi University</h2>
+                <img class="polyu-logo" src="./src/assets/images/school_logo/TongJi_logo.jpg"></img>
+
+                <h3>2024.02-2024.07</h3>
+          
+                <!-- Year 1 -->
+                <h2>Year 2 Semester 2</h3>
+          
+                  <ol class>
+                    <div class="timeline-item item-bg">
+                      <span class="line activity "></span>
+                      <h4>TongJi Tea Club "采薇"</h4>
+                      <h5>2024.02-2024.07</h5>
+                      <h5 class="secretary">Secretary</h5>
+                    </div>
+                  </ol>
+          
+                  <ol class>
+                    <div class="timeline-item item-bg">
+                      <span class="line project "></span>
+                      <h4>GNetwork main page (This website)</h4>
+                      <h5>2024.04</h5>
+                      <p>A website build by html,css,javascript with MySQL</p>
+                      <a href="https://github.com/ugnjhjf/ugnjhjf.github.io">link</a>
+                    </div>
+                  </ol>
+            </div>
+
+    
+<button>ALL Activities</button>
+
+    <section id="project" class="banner project">
+      <section id="scroll-down2">
+          <div class="project_box">
+            <!-- Education -->
+            <ol>
+              <h1>Projects</h1>
+              <!-- 2nd  -->
+
+                <ol>
+                  <h2>Kurumi & KeQing Self-hosted Servers</h2>
+                  </nav>
+          
+                  <h3>2019 - Current</h3>
+                  <p>A server cluster with variety services. Click to check!!
+                    <nav class="menu menu--adsila">
+                      <a class="menu__item" href="https://anime.gnetwork.space">
+                        <span class="menu__item-name">Video Streaming</span>
+                        <span class="menu__item-label"> > AniOne < </span>
+                      </a>
+                    </a>
+                      <a class="menu__item" href="#">
+                        <span class="menu__item-name">Personal website</span>
+                        <span class="menu__item-label"> > GNetwork < </span>
+                      </a>
+                    </a>
+                      <a class="menu__item" href="https://cloud.gnetwork.space">
+                        <span class="menu__item-name">Cloud Storage</span>
+                        <span class="menu__item-label"> > GN.Data Warehouse < </span>
+                      </a>
+                    </a>
+                      <a class="menu__item">
+                        <span class="menu__item-name">Virtual Machine Platform</span>
+                        <span class="menu__item-label"> > ESXI < </span>
+                      </a>
+                    </a>
+                      <a class="menu__item">
+                        <span class="menu__item-name">Database System</span>
+                        <span class="menu__item-label"> > MySQL & MongoDB < </span>
+                      </a>
+                    </a>
+                    </nav>
+                  </p>
+                  <!-- 3rd  -->
+                  <h2>Game Developement - Multiplayer FPS Game</h2>
+            
+                  <h3>2024.02-2024.07</h3>
+                </ol>
+            </ol>
+  
+          
+          <a href="">
+            <div class="scroll-down scroll--right"></div>
+          </a>
+        </div>
+      </section>
+    </section>
+  </div>
  
+
+
+
+
+
+ <!-- footer-->
     <div class="footer">
       <div class="wrapper">
         <a class="icon github" href="https://github.com/ugnjhjf">
