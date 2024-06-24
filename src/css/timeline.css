@@ -1,4 +1,5 @@
     /* Global setting */
+<<<<<<< HEAD
     .container1 {
         position: relative;
         padding-left: 2%;
@@ -38,6 +39,14 @@
         backdrop-filter: blur(5px);
         }
         
+=======
+    .container {
+        position: relative;
+        padding-left: 2%;
+        color: white;
+    }
+
+>>>>>>> aa883e5498dadd91b64997bd29f147b9f057e82e
     ol {
         margin: 2px;
         margin-left: 20px;
@@ -53,7 +62,11 @@
         background-color: grey;
         background-position: -50px -50px;
         border-radius: 12px;
+<<<<<<< HEAD
         width: 40%;
+=======
+        width: 30%;
+>>>>>>> aa883e5498dadd91b64997bd29f147b9f057e82e
         margin: 15px;
     }
 /* --------------- */
@@ -65,7 +78,11 @@
         position: absolute;
         left: 40px;
         top: 50px;
+<<<<<<< HEAD
         bottom: 5px;
+=======
+        bottom: 0px;
+>>>>>>> aa883e5498dadd91b64997bd29f147b9f057e82e
         width: 2px;
         background-color: red;
         z-index: 20;
@@ -73,8 +90,13 @@
   
     .tongji-blue-line {
         position: absolute;
+<<<<<<< HEAD
         left: 50px;
         top: 20px;
+=======
+        left: 40px;
+        top: 0px;
+>>>>>>> aa883e5498dadd91b64997bd29f147b9f057e82e
         bottom: 0;
         width: 2px;
         background-color: blue;
@@ -114,6 +136,7 @@
         background-color: grey;
     }
     .timeline-item .activity{
+<<<<<<< HEAD
         background-color: #f79586;
     }
 
@@ -123,6 +146,16 @@
     }
 
     .timeline-it .project{
+=======
+        background-color: #da70d6;
+    }
+
+    .timeline-item .assignment{
+        background-color: #ffff00;
+    }
+
+    .timeline-itme .project{
+>>>>>>> aa883e5498dadd91b64997bd29f147b9f057e82e
         background-color: #00ff7f;
     }
 
@@ -130,6 +163,7 @@
         background-color: #00bfff;
     }
 
+<<<<<<< HEAD
     .timeline-item .certificate{
         background-color: #28cc9e;
     }
@@ -139,12 +173,15 @@
     .timeline-item .hkstp {
         height: 10em
     }
+=======
+>>>>>>> aa883e5498dadd91b64997bd29f147b9f057e82e
     
 /* Events */
 /* Year 1 */
     .timeline-item .merit{
         color: orange;
     }
+<<<<<<< HEAD
     .timeline-item .finalist{
         color: rgb(156, 236, 127);
     }
@@ -152,6 +189,8 @@
     .timeline-item .secretary{
         color: firebrick
     }
+=======
+>>>>>>> aa883e5498dadd91b64997bd29f147b9f057e82e
     
     .timeline-item .hktechathon2023 {
         height: 3em;
@@ -170,10 +209,17 @@
 /* --------------- */
     /* logo */
     .polyu-logo {
+<<<<<<< HEAD
         width: 30%
     }
     .comp{
         width:23%
+=======
+        width: 20%
+    }
+    .comp{
+        width:15%
+>>>>>>> aa883e5498dadd91b64997bd29f147b9f057e82e
     }
     .design{
         width:10%
