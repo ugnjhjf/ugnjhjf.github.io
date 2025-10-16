@@ -121,32 +121,32 @@ header ul li a:hover {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url("../assets/images/bg.jpg");
+  background-color: #1a1a1a;
   background-size: cover;
   display: flex;
   justify-content: center;
-  align-items: center; /* 这两行用于使用 Flexbox 进行居中 */
+  align-items: center; /* These two lines use Flexbox for centering */
 }
 
 .banner.services {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url("../assets/images/bg_project.jpg");
+  background-color: #2a2a2a;
   background-size: cover;
   display: flex;
   justify-content: center;
-  align-items: center; /* 这两行用于使用 Flexbox 进行居中 */
+  align-items: center; /* These two lines use Flexbox for centering */
 }
 .banner.education {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url("../assets/images/bg_education.jpg");
+  background-color: #3a3a3a;
   background-size: cover;
   display: flex;
   justify-content: center;
-  align-items: center; /* 这两行用于使用 Flexbox 进行居中 */
+  align-items: center; /* These two lines use Flexbox for centering */
 }
 
 
@@ -227,8 +227,8 @@ header.sticky ul li a {
 /* Scroll bar Section */
 
 .scroll-down {
-  height: 80px; /* 增加高度以容纳文字 */
-  width: 130px; /* 增加宽度以更好地居中显示文字 */
+  height: 80px; /* Increase height to accommodate text */
+  width: 130px; /* Increase width for better text centering */
   /* border: 2px solid white; */
   border: 0px transparent;
   position: absolute;
@@ -238,10 +238,10 @@ header.sticky ul li a {
   cursor: pointer;
   background-color: transparent;
   display: flex;
-  flex-direction: column; /* 使内容垂直堆叠 */
-  align-items: center; /* 水平居中对齐子项 */
-  justify-content: center; /* 垂直居中对齐子项 */
-  padding: 10px 0; /* 添加内边距以避免内容触摸边界 */
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Horizontally center child items */
+  justify-content: center; /* Vertically center child items */
+  padding: 10px 0; /* Add padding to avoid content touching boundaries */
 }
 
 .scroll-down-right {
@@ -263,10 +263,10 @@ header.sticky ul li a {
   text-align: center;
   line-height: 50px;
   opacity: 0;
-  /* 初始透明度 */
+  /* Initial opacity */
   cursor: pointer;
   transition: opacity 0.3s ease-in-out;
-  /* 添加淡入淡出动画 */
+  /* Add fade in/out animation */
 }
 
  #back-to-top:hover {
@@ -274,11 +274,11 @@ header.sticky ul li a {
  }
 
 /*.scroll-down span {
-  order: 2; /* 确保文字显示在箭头下方 */
-/* padding-top: 50px; /* 在文字与箭头之间添加一些空间 */
-/* font-size: 14px; /* 设置文字大小 */
-/* color: white; /* 设置文字颜色 */
-/* text-align: center; /* 确保文字水平居中 */
+  order: 2; /* Ensure text displays below arrow */
+/* padding-top: 50px; /* Add some space between text and arrow */
+/* font-size: 14px; /* Set text size */
+/* color: white; /* Set text color */
+/* text-align: center; /* Ensure text is horizontally centered */
 /* animation: scroll-down 1.5s ease-in-out infinite;
   font-family: "Roboto", sans-serif;
   font-size: 1em;
@@ -289,7 +289,7 @@ header.sticky ul li a {
 .scroll-down::after {
   content: "";
   position: absolute;
-  top: 10%; /* 调整位置以适合新布局 */
+  top: 10%; /* Adjust position to fit new layout */
   left: 50%;
   height: 10px;
   width: 10px;
@@ -301,7 +301,7 @@ header.sticky ul li a {
 }
 
 .scroll-down::before {
-  top: 20%; /* 调整位置以适合新布局 */
+  top: 20%; /* Adjust position to fit new layout */
   animation-delay: 0.3s;
 }
 

@@ -1,19 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
 .card {
-  position: absolute !important; /* 相对于最近的定位祖先元素 `.banner` 定位 */
+  position: absolute !important; /* Position relative to the nearest positioned ancestor element `.banner` */
   top: 50% !important;
   left: 50% !important;
   transform: translate(
     50%,
     -35%
-  ) !important; /* 向左和向上偏移自身的50%，实现完全居中 */
+  ) !important; /* Offset 50% left and up from itself to achieve perfect centering */
   width: 350px;
-  height: 230px; /* 可以调整为 450px 视觉效果更佳 */
+  height: 230px; /* Can be adjusted to 450px for better visual effect */
   background: linear-gradient(45deg, #b4b4b8, #c7c8cc, #e3e1d9, #f2efe5);
   border-radius: 20px;
   box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
-  transition: 0.5s; /* 过渡效果使得大小变化更平滑 */
+  transition: 0.5s; /* Transition effect makes size changes smoother */
 }
 
 .card:hover {

@@ -11,7 +11,7 @@
             backdrop-filter: blur(10px);
     }
 
-    /* 高斯模糊盒 */
+    /* Gaussian blur box */
     .education_box{
         position: relative;
         left:5%;
@@ -179,7 +179,7 @@
     
     .timeline-item .hktechathon2023 {
         height: 3em;
-        /* 字体高度 */
+        /* Font height */
         background-color: rgba(152, 152, 152, 0.43);
     }
     /* Year 2 */
