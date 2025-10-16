@@ -291,6 +291,8 @@ html {
   align-items: center;
   gap: var(--fluent-spacing-m);
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .fluent-nav-link {
@@ -299,6 +301,7 @@ html {
   padding: var(--fluent-spacing-s) var(--fluent-spacing-m);
   border-radius: var(--fluent-border-radius-medium);
   transition: all var(--fluent-duration-normal) var(--fluent-easing-ease);
+  position: relative;
 }
 
 .fluent-nav-link:hover {
