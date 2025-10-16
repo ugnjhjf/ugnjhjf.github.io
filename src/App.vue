@@ -1,30 +1,16 @@
 <template>
   <div id="app">
-    <!-- Navigation Header -->
-    <Header />
-    
-    <!-- Back to Top Button -->
-    <BackToTop />
-    
-    <!-- Router View -->
-    <router-view />
-    
-    <!-- Footer -->
-    <Footer />
+    <MainLayout />
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Footer from './components/Footer.vue'
-import BackToTop from './components/BackToTop.vue'
+import MainLayout from './layouts/MainLayout.vue'
 
 export default {
   name: 'App',
   components: {
-    Header,
-    Footer,
-    BackToTop
+    MainLayout
   }
 }
 </script>

@@ -9,7 +9,12 @@ export default defineConfig({
       '@': resolve(__dirname, 'src'),
       '@assets': resolve(__dirname, 'src/assets'),
       '@components': resolve(__dirname, 'src/components'),
-      '@views': resolve(__dirname, 'src/views')
+      '@pages': resolve(__dirname, 'src/pages'),
+      '@layouts': resolve(__dirname, 'src/layouts'),
+      '@styles': resolve(__dirname, 'src/styles'),
+      '@views': resolve(__dirname, 'src/views'),
+      '@css': resolve(__dirname, 'src/css'),
+      '@js': resolve(__dirname, 'src/js')
     }
   },
   build: {

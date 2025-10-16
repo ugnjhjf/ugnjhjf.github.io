@@ -1,15 +1,22 @@
 import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
-import Home from './views/Home.vue'
-import Projects from './views/Projects.vue'
+import HomePage from './pages/HomePage.vue'
+import AboutPage from './pages/AboutPage.vue'
+import ProjectsPage from './pages/ProjectsPage.vue'
+import ServicesPage from './pages/ServicesPage.vue'
+import ContactPage from './pages/ContactPage.vue'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import './styles/fluent/fluent-design.css'
 
 // Router configuration
 const routes = [
-  { path: '/', component: Home },
-  { path: '/projects', component: Projects }
+  { path: '/', component: HomePage },
+  { path: '/about', component: AboutPage },
+  { path: '/projects', component: ProjectsPage },
+  { path: '/services', component: ServicesPage },
+  { path: '/contact', component: ContactPage }
 ]
 
 const router = createRouter({

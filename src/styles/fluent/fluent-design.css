@@ -1,0 +1,400 @@
+/* Fluent Design 2 Base Styles */
+:root {
+  /* Fluent Design 2 Color Tokens */
+  --fluent-accent-primary: #0078d4;
+  --fluent-accent-secondary: #106ebe;
+  --fluent-accent-tertiary: #005a9e;
+  --fluent-accent-quaternary: #004578;
+  
+  --fluent-neutral-primary: #323130;
+  --fluent-neutral-secondary: #605e5c;
+  --fluent-neutral-tertiary: #a19f9d;
+  --fluent-neutral-quaternary: #c8c6c4;
+  --fluent-neutral-quinary: #edebe9;
+  --fluent-neutral-sextenary: #faf9f8;
+  
+  --fluent-background-primary: #ffffff;
+  --fluent-background-secondary: #faf9f8;
+  --fluent-background-tertiary: #f3f2f1;
+  --fluent-background-quaternary: #edebe9;
+  
+  --fluent-foreground-primary: #323130;
+  --fluent-foreground-secondary: #605e5c;
+  --fluent-foreground-disabled: #a19f9d;
+  
+  /* Fluent Design 2 Typography */
+  --fluent-font-family-primary: 'Segoe UI', 'Segoe UI Web (West European)', 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
+  --fluent-font-family-mono: 'Cascadia Code', 'Consolas', 'Courier New', monospace;
+  
+  --fluent-font-size-caption: 12px;
+  --fluent-font-size-body: 14px;
+  --fluent-font-size-subheading: 16px;
+  --fluent-font-size-heading: 20px;
+  --fluent-font-size-title: 24px;
+  --fluent-font-size-large-title: 28px;
+  --fluent-font-size-display: 32px;
+  
+  --fluent-font-weight-regular: 400;
+  --fluent-font-weight-medium: 500;
+  --fluent-font-weight-semibold: 600;
+  --fluent-font-weight-bold: 700;
+  
+  /* Fluent Design 2 Spacing */
+  --fluent-spacing-xs: 4px;
+  --fluent-spacing-s: 8px;
+  --fluent-spacing-m: 16px;
+  --fluent-spacing-l: 24px;
+  --fluent-spacing-xl: 32px;
+  --fluent-spacing-xxl: 48px;
+  --fluent-spacing-xxxl: 64px;
+  
+  /* Fluent Design 2 Border Radius */
+  --fluent-border-radius-none: 0px;
+  --fluent-border-radius-small: 2px;
+  --fluent-border-radius-medium: 4px;
+  --fluent-border-radius-large: 8px;
+  --fluent-border-radius-xlarge: 12px;
+  
+  /* Fluent Design 2 Shadows */
+  --fluent-shadow-2: 0 1px 2px rgba(0, 0, 0, 0.14), 0 0 2px rgba(0, 0, 0, 0.12);
+  --fluent-shadow-4: 0 2px 4px rgba(0, 0, 0, 0.14), 0 0 2px rgba(0, 0, 0, 0.12);
+  --fluent-shadow-8: 0 4px 8px rgba(0, 0, 0, 0.14), 0 0 2px rgba(0, 0, 0, 0.12);
+  --fluent-shadow-16: 0 8px 16px rgba(0, 0, 0, 0.14), 0 0 2px rgba(0, 0, 0, 0.12);
+  --fluent-shadow-28: 0 14px 28px rgba(0, 0, 0, 0.14), 0 0 2px rgba(0, 0, 0, 0.12);
+  --fluent-shadow-64: 0 32px 64px rgba(0, 0, 0, 0.14), 0 0 2px rgba(0, 0, 0, 0.12);
+  
+  /* Fluent Design 2 Motion */
+  --fluent-duration-fast: 100ms;
+  --fluent-duration-normal: 200ms;
+  --fluent-duration-slow: 300ms;
+  --fluent-duration-slower: 500ms;
+  
+  --fluent-easing-ease: cubic-bezier(0.1, 0.9, 0.2, 1);
+  --fluent-easing-ease-in: cubic-bezier(0.1, 0.9, 0.2, 1);
+  --fluent-easing-ease-out: cubic-bezier(0.1, 0.9, 0.2, 1);
+  --fluent-easing-ease-in-out: cubic-bezier(0.1, 0.9, 0.2, 1);
+}
+
+/* Fluent Design 2 Base Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--fluent-font-family-primary);
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--fluent-foreground-primary);
+  background-color: var(--fluent-background-primary);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--fluent-font-family-primary);
+  font-size: var(--fluent-font-size-body);
+  font-weight: var(--fluent-font-weight-regular);
+  line-height: 1.4;
+  color: var(--fluent-foreground-primary);
+  background-color: var(--fluent-background-primary);
+  overflow-x: hidden;
+}
+
+/* Disable scrolling on home page */
+body.home-page-active {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--fluent-background-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--fluent-neutral-tertiary);
+  border-radius: var(--fluent-border-radius-small);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--fluent-neutral-secondary);
+}
+
+/* Custom scrollbar for Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--fluent-neutral-tertiary) var(--fluent-background-secondary);
+}
+
+/* Fluent Design 2 Typography Classes */
+.fluent-text-caption {
+  font-size: var(--fluent-font-size-caption);
+  line-height: 1.33;
+}
+
+.fluent-text-body {
+  font-size: var(--fluent-font-size-body);
+  line-height: 1.4;
+}
+
+.fluent-text-subheading {
+  font-size: var(--fluent-font-size-subheading);
+  line-height: 1.25;
+  font-weight: var(--fluent-font-weight-medium);
+}
+
+.fluent-text-heading {
+  font-size: var(--fluent-font-size-heading);
+  line-height: 1.2;
+  font-weight: var(--fluent-font-weight-semibold);
+}
+
+.fluent-text-title {
+  font-size: var(--fluent-font-size-title);
+  line-height: 1.17;
+  font-weight: var(--fluent-font-weight-semibold);
+}
+
+.fluent-text-large-title {
+  font-size: var(--fluent-font-size-large-title);
+  line-height: 1.14;
+  font-weight: var(--fluent-font-weight-semibold);
+}
+
+.fluent-text-display {
+  font-size: var(--fluent-font-size-display);
+  line-height: 1.13;
+  font-weight: var(--fluent-font-weight-semibold);
+}
+
+/* Fluent Design 2 Surface Styles */
+.fluent-surface-primary {
+  background-color: var(--fluent-background-primary);
+  color: var(--fluent-foreground-primary);
+}
+
+.fluent-surface-secondary {
+  background-color: var(--fluent-background-secondary);
+  color: var(--fluent-foreground-primary);
+}
+
+.fluent-surface-tertiary {
+  background-color: var(--fluent-background-tertiary);
+  color: var(--fluent-foreground-primary);
+}
+
+.fluent-surface-quaternary {
+  background-color: var(--fluent-background-quaternary);
+  color: var(--fluent-foreground-primary);
+}
+
+/* Fluent Design 2 Card Component */
+.fluent-card {
+  background-color: var(--fluent-background-primary);
+  border-radius: var(--fluent-border-radius-large);
+  box-shadow: var(--fluent-shadow-2);
+  padding: var(--fluent-spacing-l);
+  transition: box-shadow var(--fluent-duration-normal) var(--fluent-easing-ease);
+}
+
+.fluent-card:hover {
+  box-shadow: var(--fluent-shadow-8);
+}
+
+.fluent-card-elevated {
+  box-shadow: var(--fluent-shadow-8);
+}
+
+.fluent-card-elevated:hover {
+  box-shadow: var(--fluent-shadow-16);
+}
+
+/* Fluent Design 2 Button Component */
+.fluent-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--fluent-spacing-s) var(--fluent-spacing-m);
+  border: none;
+  border-radius: var(--fluent-border-radius-medium);
+  font-family: var(--fluent-font-family-primary);
+  font-size: var(--fluent-font-size-body);
+  font-weight: var(--fluent-font-weight-medium);
+  line-height: 1.4;
+  cursor: pointer;
+  transition: all var(--fluent-duration-normal) var(--fluent-easing-ease);
+  text-decoration: none;
+  min-height: 32px;
+}
+
+.fluent-button-primary {
+  background-color: var(--fluent-accent-primary);
+  color: white;
+}
+
+.fluent-button-primary:hover {
+  background-color: var(--fluent-accent-secondary);
+}
+
+.fluent-button-secondary {
+  background-color: var(--fluent-background-primary);
+  color: var(--fluent-accent-primary);
+  border: 1px solid var(--fluent-accent-primary);
+}
+
+.fluent-button-secondary:hover {
+  background-color: var(--fluent-background-tertiary);
+}
+
+.fluent-button-ghost {
+  background-color: transparent;
+  color: var(--fluent-accent-primary);
+}
+
+.fluent-button-ghost:hover {
+  background-color: var(--fluent-background-tertiary);
+}
+
+/* Fluent Design 2 Navigation */
+.fluent-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--fluent-spacing-m) var(--fluent-spacing-l);
+  background-color: var(--fluent-background-primary);
+  box-shadow: var(--fluent-shadow-2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.fluent-nav-brand {
+  font-size: var(--fluent-font-size-title);
+  font-weight: var(--fluent-font-weight-semibold);
+  color: var(--fluent-foreground-primary);
+  text-decoration: none;
+}
+
+.fluent-nav-links {
+  display: flex;
+  align-items: center;
+  gap: var(--fluent-spacing-m);
+  list-style: none;
+}
+
+.fluent-nav-link {
+  color: var(--fluent-foreground-secondary);
+  text-decoration: none;
+  padding: var(--fluent-spacing-s) var(--fluent-spacing-m);
+  border-radius: var(--fluent-border-radius-medium);
+  transition: all var(--fluent-duration-normal) var(--fluent-easing-ease);
+}
+
+.fluent-nav-link:hover {
+  color: var(--fluent-accent-primary);
+  background-color: var(--fluent-background-tertiary);
+}
+
+.fluent-nav-link.active {
+  color: var(--fluent-accent-primary);
+  background-color: var(--fluent-background-tertiary);
+}
+
+/* Fluent Design 2 Page Container */
+.fluent-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px; /* Account for fixed navigation */
+}
+
+.fluent-page-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--fluent-spacing-xxl);
+  text-align: center;
+}
+
+/* Fluent Design 2 Grid System */
+.fluent-grid {
+  display: grid;
+  gap: var(--fluent-spacing-l);
+}
+
+.fluent-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.fluent-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.fluent-grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Fluent Design 2 Responsive Design */
+@media (max-width: 768px) {
+  .fluent-grid-2,
+  .fluent-grid-3,
+  .fluent-grid-4 {
+    grid-template-columns: 1fr;
+  }
+  
+  .fluent-nav {
+    padding: var(--fluent-spacing-s) var(--fluent-spacing-m);
+  }
+  
+  .fluent-nav-links {
+    gap: var(--fluent-spacing-s);
+  }
+  
+  .fluent-page-content {
+    padding: var(--fluent-spacing-l);
+  }
+}
+
+/* Fluent Design 2 Animations */
+@keyframes fluent-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fluent-slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fluent-animate-fade-in {
+  animation: fluent-fade-in var(--fluent-duration-slow) var(--fluent-easing-ease);
+}
+
+.fluent-animate-slide-in {
+  animation: fluent-slide-in var(--fluent-duration-slow) var(--fluent-easing-ease);
+}
